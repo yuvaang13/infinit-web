@@ -215,12 +215,12 @@ export default function Page() {
               <div className="space-y-4 p-6">
                 <div className="flex gap-3">
                   <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#715AFF] to-[#A682FF] text-[11px] font-bold text-white">AI</div>
-                  <div className="rounded-2xl rounded-tl-sm bg-white px-4 py-3 text-[13px] leading-relaxed text-[#090F1E] shadow-sm">
-                    Hi! I’m Infinit. What would you like to explore today? 🧪
-                    <div className="mt-2 flex flex-wrap gap-1.5">
-                      <span className="rounded-full bg-[#F1F0FF] px-2.5 py-1 text-[11px] font-medium text-[#715AFF]">Photosynthesis</span>
-                      <span className="rounded-full bg-[#F1F0FF] px-2.5 py-1 text-[11px] font-medium text-[#715AFF]">Solar system</span>
-                      <span className="rounded-full bg-[#F1F0FF] px-2.5 py-1 text-[11px] font-medium text-[#715AFF]">Fractions</span>
+                  <div className="liquid-glass rounded-2xl rounded-tl-sm px-4 py-3 text-[13px] leading-relaxed text-white/90">
+                    <span className="relative">Hi! I’m Infinit. What would you like to explore today? 🧪</span>
+                    <div className="relative mt-2 flex flex-wrap gap-1.5">
+                      <span className="rounded-full bg-white/[0.08] border border-white/10 backdrop-blur px-2.5 py-1 text-[11px] font-medium text-white/85">Photosynthesis</span>
+                      <span className="rounded-full bg-white/[0.08] border border-white/10 backdrop-blur px-2.5 py-1 text-[11px] font-medium text-white/85">Solar system</span>
+                      <span className="rounded-full bg-white/[0.08] border border-white/10 backdrop-blur px-2.5 py-1 text-[11px] font-medium text-white/85">Fractions</span>
                     </div>
                   </div>
                 </div>
@@ -233,24 +233,24 @@ export default function Page() {
 
                 <div className="flex gap-3">
                   <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#715AFF] to-[#A682FF] text-[11px] font-bold text-white">AI</div>
-                  <div className="flex-1 rounded-2xl rounded-tl-sm border border-[#A682FF]/20 bg-white px-4 py-3 shadow-sm">
-                    <div className="flex items-center gap-2 text-[11px] font-semibold tracking-widest text-[#715AFF]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" /> V4 • Confidence 94%
+                  <div className="liquid-glass flex-1 rounded-2xl rounded-tl-sm px-4 py-3">
+                    <div className="relative flex items-center gap-2 text-[11px] font-semibold tracking-widest text-violet-200">
+                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.6)]" /> V4 • Confidence 94%
                     </div>
-                    <p className="mt-2 text-[13px] leading-relaxed text-[#1E293B]">
-                      Great question! Plants are like tiny chefs — they make their own food using <span className="font-semibold text-[#715AFF]">sunlight + water + CO₂</span>. Inside leaves, chlorophyll captures light and turns it into energy. Want to try a quick quiz?
+                    <p className="relative mt-2 text-[13px] leading-relaxed text-white/85">
+                      Great question! Plants are like tiny chefs — they make their own food using <span className="font-semibold text-white">sunlight + water + CO₂</span>. Inside leaves, chlorophyll captures light and turns it into energy. Want to try a quick quiz?
                     </p>
-                    <div className="mt-3 flex gap-2">
-                      <span className="rounded-full bg-[#10B981]/15 px-2.5 py-1 text-[11px] font-medium text-emerald-700">Citations • 3 sources</span>
-                      <span className="rounded-full bg-[#A682FF]/10 px-2.5 py-1 text-[11px] font-medium text-[#715AFF]">Follow-up: Why is chlorophyll green?</span>
+                    <div className="relative mt-3 flex gap-2">
+                      <span className="rounded-full bg-emerald-500/15 border border-emerald-500/20 px-2.5 py-1 text-[11px] font-medium text-emerald-200">Citations • 3 sources</span>
+                      <span className="rounded-full bg-white/[0.06] border border-white/10 px-2.5 py-1 text-[11px] font-medium text-white/75">Follow-up: Why is chlorophyll green?</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Input */}
-                <div className="flex items-center gap-2 rounded-full border border-white/[0.08] bg-white p-1.5 pl-4 shadow-lg">
-                  <input disabled placeholder="Ask anything in STEM..." className="flex-1 bg-transparent text-sm text-gray-500 placeholder:text-gray-400 focus:outline-none" />
-                  <button className="rounded-full bg-gradient-to-br from-[#715AFF] to-[#A682FF] p-2.5 text-white">
+                <div className="liquid-glass-subtle flex items-center gap-2 rounded-full p-1.5 pl-4">
+                  <input disabled placeholder="Ask anything in STEM..." className="flex-1 bg-transparent text-sm text-white/70 placeholder:text-white/35 focus:outline-none" />
+                  <button className="rounded-full bg-gradient-to-br from-[#715AFF] to-[#A682FF] p-2.5 text-white shadow-lg shadow-[#715AFF]/20">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" /></svg>
                   </button>
                 </div>
@@ -276,11 +276,11 @@ export default function Page() {
               </div>
             </motion.div>
 
-            <motion.div animate={{ y: [0, 6, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }} className="absolute -right-2 top-20 hidden rounded-2xl border border-white/[0.08] bg-white p-3 shadow-xl sm:flex items-center gap-3">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[#A682FF] to-[#715AFF] flex items-center justify-center text-white font-bold text-xs">RAG</div>
+            <motion.div animate={{ y: [0, 6, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }} className="liquid-glass-subtle absolute -right-2 top-20 hidden rounded-2xl p-3 sm:flex items-center gap-3">
+              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[#A682FF] to-[#715AFF] flex items-center justify-center text-white font-bold text-xs shadow-md">RAG</div>
               <div>
-                <div className="text-xs font-semibold text-[#090F1E]">30k entries</div>
-                <div className="text-[11px] text-gray-500">NGSS / CCSS aligned</div>
+                <div className="text-xs font-semibold text-white">30k entries</div>
+                <div className="text-[11px] text-white/55">NGSS / CCSS aligned</div>
               </div>
             </motion.div>
           </motion.div>
@@ -479,15 +479,15 @@ export default function Page() {
                 <div className="flex items-center gap-3 text-white/80"><span className="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400">✓</span> ChromaDB vector store (30k)</div>
                 <div className="flex items-center gap-3 text-white/80"><span className="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400">✓</span> StartInfinit.command for one-click launch</div>
               </div>
-              <div className="mt-6 rounded-xl bg-white p-4 flex items-center gap-3">
-                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-[#715AFF] to-[#A682FF] flex items-center justify-center text-white">
+              <div className="liquid-glass mt-6 rounded-xl p-4 flex items-center gap-3">
+                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-[#715AFF] to-[#A682FF] flex items-center justify-center text-white shadow-md">
                   <svg width="18" height="18" viewBox="0 0 32 32" fill="none"><ellipse cx="16" cy="16" rx="12" ry="6.5" stroke="white" strokeWidth="2" transform="rotate(30 16 16)" /><ellipse cx="16" cy="16" rx="12" ry="6.5" stroke="white" strokeWidth="2" transform="rotate(-30 16 16)" /></svg>
                 </div>
-                <div className="flex-1">
-                  <div className="text-sm font-semibold text-[#02040A]">Install in 2 minutes</div>
-                  <div className="text-xs text-gray-500">Drag to Applications → Launch</div>
+                <div className="relative flex-1">
+                  <div className="text-sm font-semibold text-white">Install in 2 minutes</div>
+                  <div className="text-xs text-white/60">Drag to Applications → Launch</div>
                 </div>
-                <div className="text-xs font-medium text-gray-400">v4.0.0</div>
+                <div className="relative text-xs font-medium text-white/50">v4.0.0</div>
               </div>
             </div>
           </div>
