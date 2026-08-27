@@ -5,13 +5,13 @@ const config: Config = {
     extend: {
       colors: {
         infinit: {
-          navy: "#102E4A",
+          navy: "#0B223A",
           primary: "#A682FF",
           accent: "#715AFF",
           secondary: "#5887FF",
           sky: "#55C1FF",
-          dark: "#070B18",
-          surface: "#0F1A32"
+          dark: "#02040A",
+          surface: "#0A0F1E"
         }
       },
       fontFamily: {
@@ -20,7 +20,7 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-primary": "linear-gradient(135deg, #715AFF 0%, #A682FF 50%, #5887FF 100%)",
-        "gradient-dark": "linear-gradient(180deg, #070B18 0%, #0F1A32 100%)"
+        "gradient-dark": "linear-gradient(180deg, #02040A 0%, #0A0F1E 100%)"
       },
       animation: {
         "orbit": "orbit 12s linear infinite",

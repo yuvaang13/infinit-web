@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background: #070B18;
+  background: #02040A;
   color: #E2E8F0;
   font-family: 'Inter', system-ui, sans-serif;
   overflow-x: hidden;
@@ -26,7 +26,7 @@ body {
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #070B18;
+  background: #02040A;
 }
 ::-webkit-scrollbar-thumb {
   background: #715AFF;
@@ -35,14 +35,14 @@ body {
 
 /* Glass effect */
 .glass {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 .glass-strong {
-  background: rgba(16, 46, 74, 0.6);
+  background: rgba(8, 12, 24, 0.75);
   backdrop-filter: blur(24px);
-  border: 1px solid rgba(166, 130, 255, 0.15);
+  border: 1px solid rgba(166, 130, 255, 0.12);
 }
 
 /* Gradient text */
@@ -55,16 +55,16 @@ body {
 
 /* Glow */
 .glow {
-  box-shadow: 0 0 40px rgba(113, 90, 255, 0.4), 0 0 80px rgba(166, 130, 255, 0.15);
+  box-shadow: 0 0 32px rgba(113, 90, 255, 0.3), 0 0 64px rgba(166, 130, 255, 0.1);
 }
 .glow-hover:hover {
-  box-shadow: 0 0 50px rgba(113, 90, 255, 0.5), 0 0 100px rgba(166, 130, 255, 0.2);
+  box-shadow: 0 0 40px rgba(113, 90, 255, 0.4), 0 0 80px rgba(166, 130, 255, 0.14);
   transform: translateY(-1px);
 }
 
 /* Orbit rings */
 .orbit-ring {
-  border: 1px solid rgba(166, 130, 255, 0.15);
+  border: 1px solid rgba(166, 130, 255, 0.1);
   border-radius: 50%;
   position: absolute;
   top: 50%;
