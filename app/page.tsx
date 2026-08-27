@@ -11,6 +11,7 @@ export default function Page() {
   const [showToast, setShowToast] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [macDetected, setMacDetected] = useState(true);
+  const [askInput, setAskInput] = useState("");
 
   useEffect(() => {
     if (typeof navigator !== "undefined") {
@@ -249,8 +250,23 @@ export default function Page() {
 
                 {/* Input */}
                 <div className="liquid-glass-subtle flex items-center gap-2 rounded-full p-1.5 pl-4">
-                  <input disabled placeholder="Ask anything in STEM..." className="flex-1 bg-transparent text-sm text-white/70 placeholder:text-white/35 focus:outline-none" />
-                  <button className="rounded-full bg-gradient-to-br from-[#715AFF] to-[#A682FF] p-2.5 text-white shadow-lg shadow-[#715AFF]/20">
+                  <input
+                    value={askInput}
+                    onChange={(e) => setAskInput(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") {
+                        e.preventDefault();
+                        setAskInput("");
+                      }
+                    }}
+                    placeholder="Ask anything in STEM..."
+                    className="flex-1 bg-transparent text-sm text-white placeholder:text-white/35 focus:outline-none"
+                  />
+                  <button
+                    onClick={() => setAskInput("")}
+                    aria-label="Send"
+                    className="rounded-full bg-gradient-to-br from-[#715AFF] to-[#A682FF] p-2.5 text-white shadow-lg shadow-[#715AFF]/20 transition active:scale-95"
+                  >
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" /></svg>
                   </button>
                 </div>
