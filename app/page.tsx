@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Starfield from "./components/Starfield";
 
 const DMG_PATH = "https://huggingface.co/yg123d/infinit-AI/resolve/main/Infinit.dmg";
 const DMG_FILENAME = "Infinit.dmg";
@@ -32,8 +33,10 @@ export default function Page() {
 
   return (
     <main className="relative min-h-screen bg-[#02040A] overflow-x-hidden">
+      {/* Infinit lightspeed starfield — scroll down = warp forward, scroll up = recede */}
+      <Starfield />
       {/* Ambient gradients */}
-      <div className="pointer-events-none fixed inset-0 z-0">
+      <div className="pointer-events-none fixed inset-0 z-[1]">
         <div className="absolute -top-[400px] left-1/2 h-[900px] w-[1200px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(113,90,255,0.09),transparent_65%)] blur-[1px]" />
         <div className="absolute top-[600px] -left-[300px] h-[700px] w-[700px] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(88,135,255,0.06),transparent_65%)]" />
         <div className="absolute top-[300px] -right-[250px] h-[600px] w-[600px] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(166,130,255,0.05),transparent_65%)]" />
