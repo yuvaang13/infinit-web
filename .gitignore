@@ -5,3 +5,6 @@ dist
 .env
 .env.local
 .DS_Store
+# Large DMG - hosted on Hugging Face, not committed
+public/downloads/*.dmg
+*.dmg

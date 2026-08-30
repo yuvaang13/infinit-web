@@ -2,9 +2,9 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const DMG_PATH = "/downloads/Infinit-1.0.0.dmg";
-const DMG_FILENAME = "Infinit-1.0.0.dmg";
-const DMG_SIZE = "2.4 GB";
+const DMG_PATH = "https://huggingface.co/yg123d/infinit-AI/resolve/main/Infinit.dmg";
+const DMG_FILENAME = "Infinit.dmg";
+const DMG_SIZE = "4.9 GB";
 const VERSION = "v4.0.0";
 
 export default function Page() {
