@@ -523,6 +523,7 @@ export default function Page() {
               </div>
               <span className="text-sm font-semibold text-white">Infinit</span>
               <span className="text-xs text-white/40">© 2026 Infinit. MIT Licensed. Built for learners, not data.</span>
+              <span className="text-xs text-white/40">Built by Yuvaan Gulati</span>
             </div>
             <div className="flex flex-wrap gap-6 text-xs text-white/50">
               <a href={`https://github.com/yuvaang13/infinit-web`} target="_blank" className="hover:text-white transition">Website repo</a>
